@@ -25,22 +25,9 @@ toggleBtn.addEventListener('click', () => {
   );
 });
 
-/* ── Lenis smooth scroll ── */
-const lenis = new Lenis({ duration: 1.1, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
-gsap.ticker.add(t => lenis.raf(t * 1000));
-gsap.ticker.lagSmoothing(0);
-
-/* ── Smooth anchor links ── */
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const target = document.querySelector(a.getAttribute('href'));
-    if (target) { e.preventDefault(); lenis.scrollTo(target, { offset: -70, duration: 1.2 }); }
-  });
-});
-
 /* ── Navbar scroll state ── */
-lenis.on('scroll', ({ scroll }) => {
-  document.getElementById('nav').classList.toggle('scrolled', scroll > 20);
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
 });
 
 /* ── Hero entrance ── */
