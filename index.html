@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cabinet de Traduction Ouettassi — Tanger</title>
+  <meta name="description" content="Me. Fathia Ouettassi — Traductrice assermentée & Sworn Translator à Tanger. Agréée près les juridictions. Traductions juridiques, officielles et certifiées." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- Apply theme before CSS loads to prevent flash -->
+  <script>
+    const t = localStorage.getItem('theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', t);
+  </script>
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="brand">
+
+        <div class="brand-text">
+          <span class="brand-name">Ouettassi</span>
+          <span class="brand-title">Cabinet de Traduction</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Basculer le mode sombre" title="Mode sombre / clair">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+        </button>
+
+        <a href="tel:0665998955" class="nav-phone" id="nav-phone">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+          06 65 99 89 55
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow" id="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          Traductrice Assermentée · Tanger, Maroc
+        </p>
+        <h1 class="hero-h1" id="hero-h1">
+          <span class="h1-line">Vos documents.</span>
+          <em class="h1-line h1-serif">Traduits avec</em>
+          <span class="h1-line">précision.</span>
+        </h1>
+        <p class="hero-sub" id="hero-sub">
+          Me. Fathia OUETTASSI — traductrice assermentée agréée près les juridictions,
+          lauréate de l'École Supérieure Roi Fahd de Traduction.
+          Spécialisée en traductions juridiques, officielles et certifiées
+          pour particuliers et entreprises.
+        </p>
+        <div class="hero-actions" id="hero-actions">
+          <a href="tel:0665998955" class="btn-primary">Appeler le cabinet</a>
+          <a href="mailto:ct.ouettassi@yahoo.fr" class="btn-outline">Envoyer un email</a>
+        </div>
+      </div>
+
+      <div class="hero-card" id="hero-card">
+        <div class="hero-card-inner">
+
+
+          <h2 class="card-name">Me. Fathia<br/>OUETTASSI</h2>
+          <p class="card-role">Traductrice Assermentée<br/><em>ترجمانة محلفة</em></p>
+
+          <div class="card-langs">
+            <span class="lang-pair">FR ⟷ AR</span>
+            <span class="lang-pair">FR ⟷ EN</span>
+            <span class="lang-pair">AR ⟷ EN</span>
+            <span class="lang-pair">FR ⟷ ES</span>
+          </div>
+
+          <div class="card-seal">
+            <span>Agréée près les juridictions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MARQUEE ── -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track" id="mtrack">
+      <div class="marquee-inner">
+        <span>Traduction Juridique</span><span class="dot">·</span>
+        <span>Documents Officiels</span><span class="dot">·</span>
+        <span>État Civil</span><span class="dot">·</span>
+        <span>Certified Translation</span><span class="dot">·</span>
+        <span>Traduction Assermentée</span><span class="dot">·</span>
+        <span>ترجمة معتمدة</span><span class="dot">·</span>
+        <span>Sworn Translator</span><span class="dot">·</span>
+        <span>Immigration</span><span class="dot">·</span>
+        <span>Contrats</span><span class="dot">·</span>
+        <span>Diplômes</span><span class="dot">·</span>
+      </div>
+      <div class="marquee-inner" aria-hidden="true">
+        <span>Traduction Juridique</span><span class="dot">·</span>
+        <span>Documents Officiels</span><span class="dot">·</span>
+        <span>État Civil</span><span class="dot">·</span>
+        <span>Certified Translation</span><span class="dot">·</span>
+        <span>Traduction Assermentée</span><span class="dot">·</span>
+        <span>ترجمة معتمدة</span><span class="dot">·</span>
+        <span>Sworn Translator</span><span class="dot">·</span>
+        <span>Immigration</span><span class="dot">·</span>
+        <span>Contrats</span><span class="dot">·</span>
+        <span>Diplômes</span><span class="dot">·</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SERVICES ── -->
+  <section id="services" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="label">Nos expertises</span>
+        <h2 class="section-h2">Ce que nous<br/><em>traduisons</em></h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="svc-card" id="svc-1">
+          <div class="svc-icon">⚖️</div>
+          <h3>Traduction Juridique<br/><em>& Assermentée</em></h3>
+          <p>Jugements, actes notariés, contrats, casiers judiciaires. Traductions officiellement certifiées et légalisées.</p>
+          <div class="svc-langs">FR · AR · EN</div>
+        </div>
+        <div class="svc-card" id="svc-2">
+          <div class="svc-icon">📋</div>
+          <h3>Documents<br/><em>d'État Civil</em></h3>
+          <p>Actes de naissance, mariages, divorces, passeports, titres de séjour. Pour toutes démarches consulaires.</p>
+          <div class="svc-langs">FR · AR · ES</div>
+        </div>
+        <div class="svc-card" id="svc-3">
+          <div class="svc-icon">🎓</div>
+          <h3>Diplômes &<br/><em>Documents Scolaires</em></h3>
+          <p>Diplômes universitaires, relevés de notes, certifications professionnelles reconnus à l'international.</p>
+          <div class="svc-langs">FR · AR · EN</div>
+        </div>
+        <div class="svc-card" id="svc-4">
+          <div class="svc-icon">💼</div>
+          <h3>Traduction<br/><em>Commerciale</em></h3>
+          <p>Contrats d'affaires, appels d'offres, rapports financiers, correspondances professionnelles.</p>
+          <div class="svc-langs">FR · AR · EN · ES</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section section-alt">
+    <div class="section-inner about-inner">
+      <div class="about-left">
+        <span class="label">À propos</span>
+        <h2 class="section-h2">Une traductrice<br/><em>de confiance</em></h2>
+        <p class="about-text">
+          Lauréate de l'École Supérieure Roi Fahd de Traduction de Tanger, 
+          Me. Fathia OUETTASSI exerce en tant que traductrice assermentée 
+          agréée près les juridictions marocaines depuis plusieurs années.
+        </p>
+        <p class="about-text">
+          Membre de l'Association des Traducteurs Agréés près les Juridictions 
+          (ATAJ), accréditée par le Ministère de la Justice du Royaume du Maroc.
+        </p>
+        <div class="badges">
+          <span class="badge">Agréée près les juridictions</span>
+          <span class="badge">École Roi Fahd de Traduction</span>
+          <span class="badge">Membre ATAJ</span>
+          <span class="badge">Ministère de la Justice · Maroc</span>
+        </div>
+      </div>
+
+      <div class="stats-col">
+        <div class="stat-box" id="sb-1">
+          <span class="stat-n" data-target="5">0</span><span class="stat-plus">+</span>
+          <p>Langues de travail</p>
+        </div>
+        <div class="stat-box" id="sb-2">
+          <span class="stat-n" data-target="1000">0</span><span class="stat-plus">+</span>
+          <p>Dossiers traités</p>
+        </div>
+        <div class="stat-box" id="sb-3">
+          <span class="stat-n" data-target="48">0</span><span class="stat-plus">h</span>
+          <p>Délai moyen</p>
+        </div>
+        <div class="stat-box stat-highlight" id="sb-4">
+          <span class="stat-n">100</span><span class="stat-plus">%</span>
+          <p>Documents acceptés</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">
+
+          <div>
+            <p class="fc-name">Cabinet de Traduction Ouettassi</p>
+            <p class="fc-sub">Me. Fathia OUETTASSI · Traductrice Assermentée</p>
+          </div>
+        </div>
+        <p class="footer-ataj">
+          ★ Membre de l'Association ATAJ — Accréditée par le Ministère de la Justice du Royaume du Maroc
+        </p>
+      </div>
+
+      <div class="footer-contacts">
+        <h3 class="footer-cta-title">Contactez-nous</h3>
+        <div class="contact-items">
+          <a href="tel:0539341460" class="contact-item">
+            <span class="ci-icon">☎</span>
+            <span>0539 34 14 60</span>
+          </a>
+          <a href="tel:0665998955" class="contact-item">
+            <span class="ci-icon">📱</span>
+            <span>06 65 99 89 55</span>
+          </a>
+          <a href="mailto:ct.ouettassi@yahoo.fr" class="contact-item">
+            <span class="ci-icon">✉</span>
+            <span>ct.ouettassi@yahoo.fr</span>
+          </a>
+          <a href="https://maps.app.goo.gl/n6y2BkjVjhuMSj6w5" target="_blank" rel="noopener" class="contact-item">
+            <span class="ci-icon">📍</span>
+            <span>32 Rue Zerktouni, Bureau n°30, 1er étage<br/>En face de Cinéma Goya — Tanger 90000</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Cabinet de Traduction Ouettassi · Tanger, Maroc</p>
+      <a href="https://maps.app.goo.gl/n6y2BkjVjhuMSj6w5" target="_blank" rel="noopener">Voir sur Google Maps ↗</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
